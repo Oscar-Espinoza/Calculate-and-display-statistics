@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="main.js"></script>
+    <script src="congress-113-senate-members.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row header mt-5 align-items-baseline">
+            <div class="col-1">
+                <img src="data/images/logo_2.png" alt="logo de ejemplo" class="w-100 h-100">
+            </div>
+            <div class="col text-right">
+                <a href="#">info@tgif.net</a>
+            </div>
+        </div>
+        <div class="row mt-3 bg-light pt-3 pb-3 border">
+            <div class="col-1">
+                <a href="home-starter-page.html">Home</a>
+            </div>
+            <div class="col dropdown">
+                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Congress 113
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="house-starter-page.html">House</a>
+                    <a class="dropdown-item" href="#">Senate</a>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <h2 class="d-inline-block">SENATORS</h2>
+        </div>
+        <div class="row">
+            <p class="w-75">&nbsp First convened in 1789, the composition and powers of the Senate are established in Article One of the U.S. Constitution. Each state is represented by two senators, regardless of population, who serve staggered six-year terms. The Senate
+                has several exclusive powers not granted to the House, including consenting to treaties as a precondition to their ratification and consenting to or confirming appointments of Cabinet secretaries, federal judges, other federal executive
+                officials, military officers, regulatory officials, ambassadors, and other federal uniformed officers, as well as trial of federal officials impeached by the House.
+            </p>
+        </div>
+        <div class="row h-50">
+            <table id="senate-data" class="table table-bordered" style="max-height: 50%; overflow:auto">
+            </table>
+        </div>
+        <div class="row bg-light pt-3 pb-3 border">
+            <div class="col text-center">
+                <h4>2016 TGIF | All rights reserved</h4>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        createTable(data);
+    </script>
+</body>
+
+</html>
