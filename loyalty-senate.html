@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="congress-113-house-members.js"></script>
+    <script src="congress-113-senate-members.js"></script>
     <script src="main.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <title>House Attendance</title>
+    <title>House Loyalty</title>
 </head>
 
 <body>
@@ -53,21 +53,18 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                     <a class="dropdown-item" href="loyalty-house.html">House</a>
-                    <a class="dropdown-item" href="loyalty-senate.html">Senate</a>
+                    <a class="dropdown-item" href="#">Senate</a>
                 </div>
             </div>
         </div>
         <div class="row mt-5">
             <div class="col-6">
-                <h2>Attendance</h2>
-                <p> The Constitution specifies that a majority of members constitutes a quorum to do business in each house. Representatives and senators rarely force the presence of a quorum by demanding quorum calls; thus, in most cases, debates continue even if a majority is not present.</p>
-
-                <p>The Senate uses roll-call votes; a clerk calls out the names of all the senators, each senator stating "aye" or "no" when his or her name is announced. The House reserves roll-call votes for the most formal matters, as a roll-call of all 435 representatives takes quite some time; normally, members vote by electronic device. In the case of a tie, the motion in question fails. In the Senate, the Vice President may (if present) cast the tiebreaking vote.</p>
-
+                <h2>Party Loyalty</h2>
+                <p> Those who consider themselves to be strong partisans, strong Democrats and strong Republicans respectively, tend to be the most faithful in voting for their party's nominee for office and legislation that backs their party's agenda.</p>
             </div>
 
             <div class="col-6">                
-                <h4 class="text-right">House at glance</h4>
+                <h4 class="text-right">Senate at glance</h4>
                 <table id="GlanceTable" class="table table-bordered">
                 </table>
             </div>
@@ -76,13 +73,13 @@
         <hr>
         <div class="row w-100">
             <div class="col-6">
-              <h4>Least Engagged</h4>
-              <table id="Least Engagged" class="table table-bordered">                
+              <h4>Least Loyal</h4>
+              <table id="Least Loyal" class="table table-bordered">                
               </table>
             </div>
             <div class="col-6">
-              <h4>Most Engagged</h4>
-              <table id="Most Engagged" class="table table-bordered">                
+              <h4>Most Loyal</h4>
+              <table id="Most Loyal" class="table table-bordered">                
               </table>
             </div>
         </div>
@@ -95,8 +92,8 @@
 
     <script>
         createCalculatedTable("GlanceTable", data, glanceProperties)
-        createCalculatedTable("Least Engagged", data, attendanceProperties)
-        createCalculatedTable("Most Engagged", data, attendanceProperties)
+        createCalculatedTable("Least Loyal", data, loyaltyProperties)
+        createCalculatedTable("Most Loyal", data, loyaltyProperties)
     </script>
 </body>
 
